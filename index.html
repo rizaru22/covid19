@@ -9,24 +9,46 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.0.2/css/adminlte.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    
   </head>
   <body>
-    <div class="container">
+    <nav class="navbar fixed-top navbar-light bg-light" >
+      <span class="navbar-brand mb-0 h1">Rekapitulasi Data COVID-19</span>
+    </nav>
+    <div class="container mt-5 pt-5">
     <div class=row>
-      <div class="col-sm-12">
-        <div class="box box-success">
-          <div class="box-header">
-            <h3 class="box-title">Data COVID-19 Provinsi Aceh</h3>
+      <div class="col-lg-12">
+          <h3 class="box-title">Data COVID-19 Provinsi Aceh</h3>
+          <div class="row">
+            <div class="col-lg-4">
+            <div class="card bg-warning text-white" style="width: 18rem;">
+              <img src="/img/sick.png"  class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text text-center" id="p"></h5>
+               
+              </div>
+            </div>
           </div>
-          <div class="box-body">
-            <ul class="list-group">
-              <li class="list-group-item" id="p"></li>
-              <li class="list-group-item" id="m"></li>
-              <li class="list-group-item" id="s"></li>
-            </ul>
+          <div class="col-lg-4">
+            <div class="card bg-danger text-white" style="width: 18rem;">
+              <img src="/img/sad.png"  class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text text-center" id="m"></h5>
+               
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="col-lg-4">
+            <div class="card bg-success text-white" style="width: 18rem;">
+              <img src="/img/smile.png"  class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text text-center" id="s"></h5>
+               
+              </div>
+            </div>
+            </div>
+          </div>
+       
       </div>
       <div class="col-sm-12">
         <div class="box box-warning">
@@ -54,7 +76,11 @@
     </div>
     <p>Sumber : <a href=https://kawalcorona.com>kawalcorona.com</a></p>
   </div>
-
+  <footer> 
+    <div class="container">
+       <p class="text-center">Made with &hearts; By : Safrizal</p>
+    </div>
+ </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -63,7 +89,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    
+   
     <script src="data.js"></script>
+    
+    </script>
   </body>
 </html>
